@@ -1,4 +1,4 @@
-package com.company.Stuff;
+package com.company.model.Stuff;
 
 public class Pilot extends Stuff{
     private String rank;

@@ -1,4 +1,6 @@
-package com.company;
+package com.company.model;
+
+import com.company.model.Airport.Airport;
 
 public class Flight {
     private Airport departureAirport;
