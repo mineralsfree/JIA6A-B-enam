@@ -9,15 +9,13 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class AirportRepo extends Repository<Airport> implements RepositoryBehaviour<Airport>  {
+public class AirportRepo extends Repository<Airport>   {
     public AirportRepo() throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        String json  = "[{\"id\":1,\"servicingCost\":500,\"coordinates\":\"12:34\",\"country\":\"Belarus\"}]";
-        items = new ArrayList<Airport>( Arrays.asList(mapper.readValue(json, Airport[].class)));
-        System.out.println(items.get(0));
+        super(Airport.class);
+//        ObjectMapper mapper = new ObjectMapper();
+//        String json  = "[{\"id\":1,\"servicingCost\":500,\"coordinates\":\"12:34\",\"country\":\"Belarus\"}]";
+//        items = new ArrayList<Airport>( Arrays.asList(mapper.readValue(json, Airport[].class)));
+//        System.out.println(items.get(0));
     }
 
-    public void Save() {
-
-    }
 }
